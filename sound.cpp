@@ -23,6 +23,7 @@ void PlayOkSounds(int pin){
   delay(BEAT);
   tone(pin,NOTE_G6,BEAT);
   delay(BEAT);
+  noTone(pin);
 }
 
 // Play NG sounds
@@ -30,4 +31,5 @@ void PlayNgSounds(int pin){
   tone(pin,NOTE_A4,300);
   delay(500);
   tone(pin,NOTE_A4,700);
+  noTone(pin);
 }
